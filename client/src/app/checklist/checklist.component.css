@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.component-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  background-color: rgb(235, 235, 235);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container > * {
+  width: 100%;
+}
+
+.date-container {
+  width: 100%;
+}
+
+.date-container > * {
+  width: 100%;
+}
+
+#form-button{
+  display: block;
+  width: 100%;
+}
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.post-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.data-style {
+  text-align: center;
+  color: red;
+}

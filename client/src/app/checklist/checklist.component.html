@@ -1,0 +1,36 @@
+<div class="component-container">
+
+  <div class="form-container">
+    <h2>Criar lembrete</h2>
+    <div class="input-container">
+      <mat-form-field>
+        <textarea matInput placeholder="Digite aqui" [(ngModel)]="textPost"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="date-container">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Data" [(ngModel)]="dataPost">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <button type="submit" class="btn btn-primary" id="form-button" (click)="postPost()">Salvar</button>
+  </div>
+
+  <div class="checklist-container">
+    <h2>Lembretes</h2>
+    <div class="post-container" *ngFor="let post of posts">
+      <div class="checkbox">
+        <label >
+          <input type="checkbox" name="checkbox" [(ngModel)]="post.checked">
+          {{post.texto}}
+          <p class="data-style">{{post.data}}</p>
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="form-button" (click)="deletePosts()">Remover</button>
+  </div>
+  
+</div>
+
