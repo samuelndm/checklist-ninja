@@ -1,5 +1,5 @@
 
-# Solution to a simple checklist challenge.
+## Solution to a simple checklist challenge.
 
  ### `Technologies` 
 - Angular 2+
